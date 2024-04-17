@@ -4,8 +4,8 @@ import { Nome } from "./components/Nome";
 const App =() => {
   const [aluno, setAluno] = useState("Ronald");
 
-  function handleChangeName(){
-    setAluno("Kaue");
+  function handleChangeName(nome){
+    setAluno(nome);
   }
 
   return (
@@ -14,7 +14,7 @@ const App =() => {
       <br />
       <h2>Olá: {aluno}</h2>
       <br />
-      <button onClick={handleChangeName}>
+      <button onClick={() => handleChangeName('Lucas')}>
         Mudar nome
       </button>
       <br />
