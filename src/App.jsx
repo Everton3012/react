@@ -2,6 +2,8 @@ import { useState } from "react";
 // import { Nome } from "./components/Nome";
 // import { Formulario } from "./components/Formulario";
 import { Lista } from "./components/Lista";
+import { Effect } from "./components/Effect";
+
 
 const App =() => {
   const [aluno, setAluno] = useState("Ronald");
@@ -12,7 +14,8 @@ const App =() => {
 
   return (
     <>
-    <Lista />
+    <Effect />
+    {/*<Lista /> */}
      {/* <h1>Bem vindo ao meu projeto</h1>
       <br />
       <h2>Olá: {aluno}</h2>
