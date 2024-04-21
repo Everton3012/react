@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Nome } from "./components/Nome";
+// import { Nome } from "./components/Nome";
+// import { Formulario } from "./components/Formulario";
+import { Lista } from "./components/Lista";
 
 const App =() => {
   const [aluno, setAluno] = useState("Ronald");
@@ -10,7 +12,8 @@ const App =() => {
 
   return (
     <>
-      <h1>Bem vindo ao meu projeto</h1>
+    <Lista />
+     {/* <h1>Bem vindo ao meu projeto</h1>
       <br />
       <h2>Olá: {aluno}</h2>
       <br />
@@ -20,7 +23,10 @@ const App =() => {
       <br />
       <Nome aluno="Everton"/>
       <br />
-      <Nome aluno="David"/>
+      <Nome aluno="David"/> */}
+
+      {/**<Formulario/> */}
+      
     </>
   )
 }
