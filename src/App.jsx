@@ -3,6 +3,7 @@ import { useState } from "react";
 // import { Formulario } from "./components/Formulario";
 import { Lista } from "./components/Lista";
 import { Effect } from "./components/Effect";
+import { Http } from "./components/Http";
 
 
 const App =() => {
@@ -14,7 +15,8 @@ const App =() => {
 
   return (
     <>
-    <Effect />
+    <Http />
+    {/*<Effect /> */}
     {/*<Lista /> */}
      {/* <h1>Bem vindo ao meu projeto</h1>
       <br />
